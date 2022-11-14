@@ -17,8 +17,13 @@ exports.handler = async (event, context) => {
 
 	if (status == "ok") {
 		document.write('OK')
+		      return {
+        statusCode: 200,
+      }
 	} else {
 		document.write('Error')
+		        statusCode: 400,
+      }
 	}
 
 
